@@ -1,0 +1,42 @@
+# ═══════════════════════════════════════════════════════════
+# Weaponizing Transparency (FactLens) — Capstone Dependencies
+# Group 9 · Florida International University · IDC 6940
+#
+# Install:  pip install -r requirements.txt
+#
+# NOTE: Google Colab ships with torch, pandas, numpy, scikit-learn,
+# and matplotlib pre-installed. Installing this file in Colab will
+# primarily pull transformers, captum, datasets, accelerate, and openai.
+# ═══════════════════════════════════════════════════════════
+
+# ── Core deep learning ─────────────────────────────────────
+torch==2.4.0
+transformers==4.44.0
+accelerate==0.33.0
+datasets==2.20.0
+tokenizers==0.19.1
+
+# ── Explainability / attribution ───────────────────────────
+captum==0.7.0
+
+# ── Adversarial generation (Phase 2) ───────────────────────
+openai==1.40.0
+
+# ── Data handling ──────────────────────────────────────────
+pandas==2.2.2
+numpy==1.26.4
+scikit-learn==1.5.1
+
+# ── Visualization ──────────────────────────────────────────
+matplotlib==3.9.1
+seaborn==0.13.2
+
+# ── Statistical testing (Phase 4) ──────────────────────────
+scipy==1.14.0
+statsmodels==0.14.2
+
+# ── Demo interface ─────────────────────────────────────────
+gradio==4.41.0
+
+# ── Utilities ──────────────────────────────────────────────
+tqdm==4.66.4
